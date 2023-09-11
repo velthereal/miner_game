@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(90, 89, 89);
+}
+.root{
+    width: 400px;
+    height: 400px;
+    /* background-color: #ccc; */
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+
+}
+.root div{
+    background-color: rgb(116, 109, 109);
+    border: solid 1px rgba(0,0,0,.6);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+.root div.visible{
+    background-color: rgb(189, 179, 167);
+    border: dashed 1px rgb(201, 193, 183);
+    border-radius: 0;
+}
+.end_game {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end_game p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(119, 115, 115);
+    width: 500px;
+    height: 200px;
+    color: yellowgreen;
+    position: relative;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+.end_game p button{
+    position: absolute;
+    bottom: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    background-color: yellowgreen;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+.win {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.win p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(119, 115, 115);
+    width: 700px;
+    height: 300px;
+    color: yellowgreen;
+    position: relative;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+.win p i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+}
+.none{
+    display: none;
+}
